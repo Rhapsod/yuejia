@@ -58,3 +58,4 @@ tiapp.xml
 app/alloy.js
 *.apk
 Gruntfile.coffee
+package.json
