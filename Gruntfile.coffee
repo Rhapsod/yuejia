@@ -8,6 +8,18 @@ module.exports = (grunt) ->
             'src/controllers/*.coffee'
           ]
         tasks: ["newer:coffee"]
+      stss:
+        files:
+          [
+            'src/styles/*.stss'
+          ]
+        tasks: ["newer:stss"]
+      jade:
+        files:
+          [
+            'src/views/*.jade'
+          ]
+        tasks: ["newer:jade"]
 
     coffee:
       compile_multiple_files:
@@ -25,20 +37,20 @@ module.exports = (grunt) ->
             dest: 'app/controllers/'
             ext: '.js'
           ]
-      compile_home_js:
-        options:
-          bare: true
-        files:
-          # 把多个文件合并
-          'app/controllers/home.js': [
-            'src/controllers/home/home_market.coffee'
-            'src/controllers/home/home_master.coffee'
-            'src/controllers/home/home_me.coffee'
-            'src/controllers/home/home_competition.coffee'
-            'src/controllers/home/home_community.coffee'
-            'src/controllers/home/home_version.coffee'
-            'src/controllers/home/home_frame.coffee'
-          ]
+      #compile_home_js:
+      #  options:
+      #    bare: true
+      #  files:
+      #    # 把多个文件合并
+      #    'app/controllers/home.js': [
+      #      'src/controllers/home/home_market.coffee'
+      #      'src/controllers/home/home_master.coffee'
+      #      'src/controllers/home/home_me.coffee'
+      #      'src/controllers/home/home_competition.coffee'
+      #      'src/controllers/home/home_community.coffee'
+      #      'src/controllers/home/home_version.coffee'
+      #      'src/controllers/home/home_frame.coffee'
+      #    ]
 
     jade:
       compile:
@@ -62,10 +74,11 @@ module.exports = (grunt) ->
           ext: '.tss'
         ]
 
-  #grunt.loadNpmTasks 'grunt-contrib-watch'
+  grunt.loadNpmTasks 'grunt-contrib-watch'
   grunt.loadNpmTasks 'grunt-contrib-coffee'
   grunt.loadNpmTasks 'grunt-contrib-jade'
   grunt.loadNpmTasks 'grunt-stss'
+  grunt.loadNpmTasks 'grunt-newer'
 
   grunt.registerTask 'default', [ 'coffee', 'jade','stss' ]
   #grunt.registerTask 'default', [ 'coffee', 'jade' ]
