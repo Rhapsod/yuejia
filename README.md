@@ -1,6 +1,6 @@
 # Dependency
 * titanium sdk.
-* node, npm etc
+* node, npm
 * $ npm install -g coffee-script
 * $ npm install -g tishadow
 * $ npm install  # 安装特定项目需要的依赖
