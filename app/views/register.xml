@@ -1,0 +1,6 @@
+
+<Alloy>
+  <Window backgroundImage="/images/background_register.jpg">
+    <Button onClick="to_login_view" title="注册页面,点击返回login"></Button>
+  </Window>
+</Alloy>

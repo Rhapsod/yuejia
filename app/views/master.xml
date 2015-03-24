@@ -1,0 +1,10 @@
+
+<Alloy>
+  <Window>
+    <ImageView id="imageView" image="/images/background_designer.jpg" width="100%" height="100%"></ImageView>
+    <View layout="vertical">
+      <Button onClick="back" title="师傅页面,返回" top="10dp"></Button>
+      <Button onClick="to_master_detail_view" title="师傅的个人信息"></Button>
+    </View>
+  </Window>
+</Alloy>

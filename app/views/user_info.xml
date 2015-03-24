@@ -1,0 +1,9 @@
+
+<Alloy>
+  <Window>
+    <ImageView id="imageView" image="/images/background_user_info.jpg" width="100%" height="100%"></ImageView>
+    <View layout="vertical">
+      <Button onClick="back" title="用户信息设置页" top="10dp"></Button>
+    </View>
+  </Window>
+</Alloy>
