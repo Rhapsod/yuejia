@@ -52,20 +52,20 @@ module.exports = (grunt) ->
           ext: '.xml'
         ]
 
-    #stss:
-    #  compile:
-    #    files:[
-    #      expand: true
-    #      src: ['**/*.stss', '!**/_*.stss']
-    #      dest: 'app'
-    #      cwd: 'src'
-    #      ext: '.tss'
-    #    ]
+    stss:
+      compile:
+        files:[
+          expand: true
+          src: ['**/*.stss', '!**/_*.stss']
+          dest: 'app'
+          cwd: 'src'
+          ext: '.tss'
+        ]
 
   #grunt.loadNpmTasks 'grunt-contrib-watch'
   grunt.loadNpmTasks 'grunt-contrib-coffee'
   grunt.loadNpmTasks 'grunt-contrib-jade'
-  #grunt.loadNpmTasks 'grunt-stss'
+  grunt.loadNpmTasks 'grunt-stss'
 
-  #grunt.registerTask 'default', [ 'coffee', 'jade','stss' ]
-  grunt.registerTask 'default', [ 'coffee', 'jade' ]
+  grunt.registerTask 'default', [ 'coffee', 'jade','stss' ]
+  #grunt.registerTask 'default', [ 'coffee', 'jade' ]
