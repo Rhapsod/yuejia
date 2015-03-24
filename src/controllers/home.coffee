@@ -37,3 +37,6 @@ to_master_view =()->
 
 to_setting_view =()->
   Alloy.createController("setting").getView().open()
+
+to_pro_list = (e) ->
+  Alloy.createController("pro_list").getView().open()

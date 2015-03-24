@@ -57,3 +57,6 @@ node_modules
 tiapp.xml
 app/alloy.js
 *.apk
+Gruntfile.coffee
+package.json
+app/views/*.xml
