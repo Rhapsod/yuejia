@@ -16,6 +16,7 @@
       <Button onClick="to_designer_view" title="设计师"></Button>
       <Button onClick="to_master_view" title="师傅列表"></Button>
       <Button onClick="to_setting_view" title="设置"></Button>
+      <Button onClick="to_pro_list" title="进入管家"></Button>
     </View>
   </Window>
 </Alloy>
