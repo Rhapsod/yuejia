@@ -1,7 +1,6 @@
 
 <Alloy>
-  <Window backgroundImage="/images/background_login.jpg" layout="vertical">
-    <Button onClick="to_login_view" title="login"></Button>
-    <Button backgroundColor="green" onClick="to_pro_list" title="进入管家" bottom="0"></Button>
+  <Window backgroundImage="/images/go.jpg">
+    <Button onClick="to_login_view" bottom="0" title="登陆"></Button>
   </Window>
 </Alloy>
