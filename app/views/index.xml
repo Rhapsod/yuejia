@@ -1,5 +1,0 @@
-<Alloy>
-  <Window backgroundImage="/images/background_login.jpg">
-    <Button onClick="to_login_view" title="新手引导页,进入login"></Button>
-  </Window>
-</Alloy>
