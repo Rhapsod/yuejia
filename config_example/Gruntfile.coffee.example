@@ -8,6 +8,18 @@ module.exports = (grunt) ->
             'src/controllers/*.coffee'
           ]
         tasks: ["newer:coffee"]
+      stss:
+        files:
+          [
+            'src/styles/*.stss'
+          ]
+        tasks: ["newer:stss"]
+      jade:
+        files:
+          [
+            'src/views/*.jade'
+          ]
+        tasks: ["newer:jade"]
 
     coffee:
       compile_multiple_files:
@@ -31,13 +43,13 @@ module.exports = (grunt) ->
         files:
           # 把多个文件合并
           'app/controllers/home.js': [
-            'src/controllers/home/home_market.coffee'
-            'src/controllers/home/home_master.coffee'
-            'src/controllers/home/home_me.coffee'
-            'src/controllers/home/home_competition.coffee'
-            'src/controllers/home/home_community.coffee'
-            'src/controllers/home/home_version.coffee'
-            'src/controllers/home/home_frame.coffee'
+            'src/controllers/home/header.coffee'
+            'src/controllers/home/require.coffee'
+            'src/controllers/home/service.coffee'
+            'src/controllers/home/progress.coffee'
+            'src/controllers/home/discover.coffee'
+            'src/controllers/home/footer.coffee'
+            'src/controllers/home/begin.coffee'
           ]
 
     jade:
@@ -46,27 +58,27 @@ module.exports = (grunt) ->
           pretty: true
         files: [
           expand: true
-          src: ['**/*.jade']
-          dest: 'app' # 写成  'app/views' 也行,
-          cwd: 'src'  # 如果 dest是'app/views', 这里就要是 'src/views'
+          src: ['*.jade']
+          dest: 'app/views' # 写成  'app/views' 也行,
+          cwd: 'src/views'  # 如果 dest是'app/views', 这里就要是 'src/views'
           ext: '.xml'
         ]
 
-    #stss:
-    #  compile:
-    #    files:[
-    #      expand: true
-    #      src: ['**/*.stss', '!**/_*.stss']
-    #      dest: 'app'
-    #      cwd: 'src'
-    #      ext: '.tss'
-    #    ]
+    stss:
+      compile:
+        files:[
+          expand: true
+          src: ['*.stss' ]
+          dest: 'app/styles'
+          cwd: 'src/styles'
+          ext: '.tss'
+        ]
 
-  #grunt.loadNpmTasks 'grunt-contrib-watch'
+  grunt.loadNpmTasks 'grunt-contrib-watch'
   grunt.loadNpmTasks 'grunt-contrib-coffee'
   grunt.loadNpmTasks 'grunt-contrib-jade'
-  #grunt.loadNpmTasks 'grunt-stss'
   grunt.loadNpmTasks 'grunt-newer'
+  grunt.loadNpmTasks 'grunt-stss'
 
-  #grunt.registerTask 'default', [ 'coffee', 'jade','stss' ]
-  grunt.registerTask 'default', [ 'coffee', 'jade' ]
+  grunt.registerTask 'default', [ 'coffee', 'jade','stss' ]
+  #grunt.registerTask 'default', [ 'coffee', 'jade' ]
