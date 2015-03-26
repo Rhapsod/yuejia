@@ -66,6 +66,7 @@ module.exports = (grunt) ->
   grunt.loadNpmTasks 'grunt-contrib-coffee'
   grunt.loadNpmTasks 'grunt-contrib-jade'
   #grunt.loadNpmTasks 'grunt-stss'
+  grunt.loadNpmTasks 'grunt-newer'
 
   #grunt.registerTask 'default', [ 'coffee', 'jade','stss' ]
   grunt.registerTask 'default', [ 'coffee', 'jade' ]

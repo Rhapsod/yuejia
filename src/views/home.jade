@@ -1,19 +1,10 @@
 Alloy
     Window
-        ImageView#imageView(image='/images/background_home.jpg' width='100%' height='100%')
         View(layout='vertical')
-            Button(onClick="to_index_view" title="返回(登陆)" top='10dp')
-            Button(onClick="to_setting_view" title="设置")
-
-            Button(onClick="to_fitment_customize_view" title="装修定制")
-            Button(onClick="to_designer_view" title="专业设计")
-            Button(onClick="to_master_view" title="装修工人")
-            Button(onClick="to_pro_list" title="我的管家")
-
-            Button(onClick="to_require_view" title="需求")
-            Button(onClick="to_service_view" title="服务")
-            Button(onClick="to_progress_view" title="进度")
-            Button(onClick="to_find_view" title="发现")
-
-
-
+            include ./home/header.jade
+            View(height='80%')
+                include ./home/require.jade
+                include ./home/service.jade
+                include ./home/progress.jade
+                include ./home/discover.jade
+            include ./home/footer.jade
