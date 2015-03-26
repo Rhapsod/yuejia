@@ -1,9 +1,18 @@
 
 <Alloy>
-  <Window>
-    <ImageView id="imageView" image="/images/background_user_info.jpg" width="100%" height="100%"></ImageView>
-    <View layout="vertical">
-      <Button onClick="back" title="返回(设置)" top="10dp"></Button>
+  <Window layout="vertical">
+    <View id="header_back" height="128px" backgroundColor="white">
+      <View width="100%" height="40px" top="0px"></View>
+      <View top="40px" height="80px" width="100%">
+        <Label id="title" height="88px" width="100%" textAlign="Titanium.UI.TEXT_ALIGNMENT_CENTER" color="black"></Label>
+        <ImageView id="back" image="/images/utilty/back.png" top="22px" left="22px" width="40px" height="50px"></ImageView>
+        <Button id="other_button" top="22px" right="22px" width="100px" textAlign="left" height="40px" color="black"></Button>
+        <ImageView id="other_imageview" top="22px" right="22px" width="40px" height="40px"></ImageView>
+      </View>
+      <View onClick="back" height="100%" left="0" width="200px"></View>
+      <View id="other_click" height="100%" right="0" width="200px"></View>
+      <View width="100%" height="1px" bottom="0px"></View>
     </View>
+    <ImageView id="imageView" image="/images/setting/change_user_info.png" width="100%" bottom="0"></ImageView>
   </Window>
 </Alloy>

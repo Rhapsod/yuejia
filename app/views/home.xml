@@ -6,7 +6,7 @@
         <View width="100%" height="40px" backgroundColor="white"></View>
         <View>
           <Label id="title" height="88px" width="100%" text="我的服务" textAlign="Titanium.UI.TEXT_ALIGNMENT_CENTER" backgroundColor="white"></Label>
-          <View id="head" height="88px" borderRadius="50" left="0" width="88px" backgroundColor="red">
+          <View id="head_icon" onClick="go_setting_view" height="88px" borderRadius="50" left="0" width="88px" backgroundColor="red">
             <ImageView image="/images/header/head.png" center="true" width="80%"></ImageView>
           </View>
         </View>
@@ -15,7 +15,21 @@
         <View id="require" layout="vertical" backgroundColor="green">
           <ImageView id="require_image" image="/images/require/require_image.png" width="100%" height="100%"></ImageView>
         </View>
-        <View id="service" layout="vertical" backgroundColor="blue"></View>
+        <View id="service" layout="vertical" height="100%">
+          <View layout="vertical" height="30%">
+            <ImageView image="/images/service/publicity.jpg" height="100%" left="0" width="100%"></ImageView>
+          </View>
+          <View layout="horizontal" height="35%" borderColor="#C5C5C5" borderWidth="1px">
+            <ImageView onClick="go_fitment_customize_view" image="/images/service/fitment_customize.png" height="100%" left="0" width="49.9%"></ImageView>
+            <View height="100%" width="0.2%" backgroundColor="#C5C5C5"></View>
+            <ImageView image="/images/service/design.png" height="100%" right="0" width="49.5%"></ImageView>
+          </View>
+          <View layout="horizontal" height="35%" borderColor="#C5C5C5" borderWidth="1px">
+            <ImageView image="/images/service/repaire.png" height="100%" left="0" width="49.9%"></ImageView>
+            <View height="100%" width="0.2%" backgroundColor="#C5C5C5"></View>
+            <ImageView image="/images/service/chamberlaine.png" height="100%" right="0" width="49.5%"></ImageView>
+          </View>
+        </View>
         <View id="progress" layout="vertical">
           <View layout="horizontal" height="88px" borderColor="#C5C5C5" borderWidth="2px">
             <Button id="progress_fitment_button" onClick="show_progress_fitment" title="装修进度" left="0" width="212px" height="100%"></Button>
