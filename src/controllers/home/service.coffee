@@ -4,3 +4,5 @@ to_designer_list = () ->
   Alloy.createController("designer_list").getView().open()
 to_workers_list = () ->
   Alloy.createController("workers_list").getView().open()
+to_my_manager = () ->
+  Alloy.createController("my_manager").getView().open()
