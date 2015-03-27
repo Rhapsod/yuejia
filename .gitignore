@@ -34,7 +34,8 @@ node_modules
 # MVC
 app/controllers/*.js
 app/views/*.xml
-app/views/*.tss
+app/styles/*.tss
+app/views/home
 
 # 配置文件
 tiapp.xml
