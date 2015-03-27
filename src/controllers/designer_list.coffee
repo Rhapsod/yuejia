@@ -1,4 +1,6 @@
 to_designer_details = () ->
   Alloy.createController("designer_details").getView().open()
-go_back = () ->
-  Alloy.createController("home").getView().open()
+back = () ->
+  $.designer_list.close()
+
+$.title.setText("设计师")

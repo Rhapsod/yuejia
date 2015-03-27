@@ -1,2 +1,4 @@
-go_back = () ->
-  Alloy.createController("home").getView().open()
+back = () ->
+  $.my_manager.close()
+
+$.title.setText("我的管家")
