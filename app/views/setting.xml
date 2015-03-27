@@ -5,13 +5,13 @@
       <View width="100%" height="40px" top="0px"></View>
       <View top="40px" height="80px" width="100%">
         <Label id="title" height="88px" width="100%" textAlign="Titanium.UI.TEXT_ALIGNMENT_CENTER" color="black"></Label>
-        <ImageView id="back" image="/images/utilty/back.png" top="22px" left="22px" width="40px" height="50px"></ImageView>
+        <Button id="back" backgroundImage="/images/utilty/back.png" top="22px" left="22px" width="40px" height="50px"></Button>
         <Button id="other_button" top="22px" right="22px" width="100px" textAlign="left" height="40px" color="black"></Button>
         <ImageView id="other_imageview" top="22px" right="22px" width="40px" height="40px"></ImageView>
       </View>
       <View onClick="back" height="100%" left="0" width="200px"></View>
       <View id="other_click" height="100%" right="0" width="200px"></View>
-      <View width="100%" height="1px" bottom="0px"></View>
+      <View width="100%" height="1px" bottom="0px" backgroundColor="#C5C5C5"></View>
     </View>
     <View layout="vertical" bottom="0">
       <ImageView onClick="to_user_info_view" image="/images/setting/head_icon.png" width="100%" height="15%"></ImageView>

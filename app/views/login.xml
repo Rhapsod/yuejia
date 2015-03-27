@@ -1,7 +1,31 @@
 
 <Alloy>
-  <Window backgroundImage="/images/background_login.jpg" layout="vertical">
-    <Button onClick="to_register_view" title="注册" top="10dp"></Button>
-    <Button onClick="to_home_view" title="服务"></Button>
+  <Window layout="vertical" backgroundColor="white">
+    <View id="header_back" height="128px" backgroundColor="white">
+      <View width="100%" height="40px" top="0px"></View>
+      <View top="40px" height="80px" width="100%">
+        <Label id="title" height="88px" width="100%" textAlign="Titanium.UI.TEXT_ALIGNMENT_CENTER" color="black"></Label>
+        <Button id="back" backgroundImage="/images/utilty/back.png" top="22px" left="22px" width="40px" height="50px"></Button>
+        <Button id="other_button" top="22px" right="22px" width="100px" textAlign="left" height="40px" color="black"></Button>
+        <ImageView id="other_imageview" top="22px" right="22px" width="40px" height="40px"></ImageView>
+      </View>
+      <View onClick="back" height="100%" left="0" width="200px"></View>
+      <View id="other_click" height="100%" right="0" width="200px"></View>
+      <View width="100%" height="1px" bottom="0px" backgroundColor="#C5C5C5"></View>
+    </View>
+    <View layout="horizontal" height="60px" top="5%">
+      <Label text="手机号" textAlign="center" left="30px"></Label>
+      <TextField left="10%" right="10%" hintText="请输入手机号"></TextField>
+    </View>
+    <View width="100%" height="1px" backgroundColor="#C5C5C5"></View>
+    <View layout="horizontal" height="60px" top="5%">
+      <Label text="密  码" textAlign="center" left="30px"></Label>
+      <TextField left="10%" right="10%" hintText="请输入密码"></TextField>
+    </View>
+    <View width="100%" height="1px" backgroundColor="#C5C5C5"></View>
+    <View layout="vertical" backgroundColor="#F1F1EF" bottom="0">
+      <Button onClick="to_home_view" left="5%" right="5%" borderColor="#BE328C" height="60px" borderRadius="5" title="登录" backgroundColor="#BE348A" top="30px" color="white"></Button>
+      <Button onClick="to_register_view" title="注册" textAlign="right" right="10%" width="90%" color="#C5C5C5" top="30px"></Button>
+    </View>
   </Window>
 </Alloy>
