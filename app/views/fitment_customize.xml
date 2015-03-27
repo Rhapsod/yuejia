@@ -6,7 +6,7 @@
       <View top="40px" height="80px" width="100%">
         <Label id="style_tab" onClick="style_view_show" height="60px" width="20%" textAlign="center" text="风格" left="50%" color="black" borderColor="#C5C5C5"></Label>
         <Label id="customzie_tab" onClick="customzie_view_show" height="60px" width="20%" textAlign="center" text="样房" right="50%" color="black" borderColor="#C5C5C5"></Label>
-        <Buttom id="back" backgroundImage="/images/utilty/back.png" top="22px" left="22px" width="40px" height="40px"></Buttom>
+        <Button id="back" backgroundImage="/images/utilty/back.png" top="22px" left="22px" width="40px" height="40px"></Button>
         <Button id="other_button" top="22px" right="22px" width="100px" textAlign="left" title="设置" height="40px" color="black"></Button>
         <Button id="other_imageview" top="22px" right="22px" width="40px" height="40px"></Button>
       </View>
