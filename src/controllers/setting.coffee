@@ -1,3 +1,5 @@
+$.title.setText('设置')
+
 back = ()->
   $.setting.close()
 

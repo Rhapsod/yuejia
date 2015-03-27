@@ -1,6 +1,6 @@
 Alloy
-    Window
-        ImageView#imageView(image='/images/background_setting.jpg' width='100%' height='100%')
-        View(layout='vertical')
-            Button(onClick="back" title="返回(服务)" top='10dp')
-            Button(onClick="to_user_info_view" title="用户信息" top='10dp')
+    Window(layout='vertical')
+        include ./utilty/header.jade
+        View(layout='vertical' bottom='0')
+            ImageView(onClick='to_user_info_view' image='/images/setting/head_icon.png' width='100%' height='15%')
+            ImageView(image='/images/setting/other.png' width='100%' height='85%')

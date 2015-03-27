@@ -1,5 +1,4 @@
 Alloy
-    Window
-        ImageView#imageView(image='/images/background_user_info.jpg' width='100%' height='100%')
-        View(layout='vertical')
-            Button(onClick="back" title="返回(设置)" top='10dp')
+    Window(layout='vertical')
+        include ./utilty/header.jade
+        ImageView#imageView(image='/images/setting/change_user_info.png' width='100%' bottom='0')
