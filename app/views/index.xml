@@ -1,6 +1,0 @@
-
-<Alloy>
-  <Window>
-    <ImageView onClick="to_login_view" image="/images/index/go.jpg" height="100%" width="100%"></ImageView>
-  </Window>
-</Alloy>
