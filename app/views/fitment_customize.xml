@@ -4,11 +4,11 @@
     <View id="header_back" height="128px" backgroundColor="white">
       <View width="100%" height="40px" top="0px"></View>
       <View top="40px" height="80px" width="100%">
-        <Label id="style_tab" onClick="style_view_show" height="60px" width="20%" textAlign="center" text="样房" left="50%" color="black" borderColor="#C5C5C5"></Label>
-        <Label id="customzie_tab" onClick="customzie_view_show" height="60px" width="20%" textAlign="center" text="风格" right="50%" color="black" borderColor="#C5C5C5"></Label>
-        <ImageView id="back" image="/images/utilty/back.png" top="22px" left="22px" width="40px" height="40px"></ImageView>
+        <Label id="style_tab" onClick="style_view_show" height="60px" width="20%" textAlign="center" text="风格" left="50%" color="black" borderColor="#C5C5C5"></Label>
+        <Label id="customzie_tab" onClick="customzie_view_show" height="60px" width="20%" textAlign="center" text="样房" right="50%" color="black" borderColor="#C5C5C5"></Label>
+        <Button id="back" backgroundImage="/images/utilty/back.png" top="22px" left="22px" width="40px" height="40px"></Button>
         <Button id="other_button" top="22px" right="22px" width="100px" textAlign="left" title="设置" height="40px" color="black"></Button>
-        <ImageView id="other_imageview" top="22px" right="22px" width="40px" height="40px"></ImageView>
+        <Button id="other_imageview" top="22px" right="22px" width="40px" height="40px"></Button>
       </View>
       <View onClick="back" height="100%" left="0" width="200px"></View>
       <View onClick="customzie_menu_show" height="100%" right="0" width="200px"></View>
@@ -24,10 +24,10 @@
         </View>
         <View bottom="0">
           <View id="style_detail" height="100%" width="100%">
-            <ImageView image="/images/customize/style.png" width="100%" height="100%"></ImageView>
+            <ImageView image="/images/customize/style_detail.png" width="100%" height="100%"></ImageView>
           </View>
           <View id="style_menu" height="100%" width="100%">
-            <ImageView image="/images/customize/menu.png" width="100%" height="100%"></ImageView>
+            <ImageView image="/images/customize/style_menu.png" width="100%" height="100%"></ImageView>
           </View>
         </View>
       </View>

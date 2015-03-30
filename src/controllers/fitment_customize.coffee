@@ -2,8 +2,8 @@ back=(e) ->
     $.fitment_customize.close()
 
 show_style_menu_open =(e) ->
-  $.style_detail.hide()
   $.style_menu.show()
+  $.style_detail.hide()
 
 show_style_menu_close =(e) ->
   $.style_detail.show()
