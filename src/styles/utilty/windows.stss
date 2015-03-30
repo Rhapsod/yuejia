@@ -1,0 +1,8 @@
+@import "utilty/color.stss";
+
+.windows{
+  height: 100%;
+  width: 100%;
+  layout: vertical;
+  backgroundColor: $spectral_hue_backgroundColor;
+}

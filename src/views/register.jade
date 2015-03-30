@@ -1,12 +1,12 @@
 Alloy
     Window
-        View(height='100%' width='100%' layout='vertical' backgroundColor='white')
+        View(class='windows')
             include ./utilty/header.jade
-            View(layout='horizontal' height='60px' top='5%')
-                Label(text='手机号' textAlign='center' left='30px')
-                TextField(left='10%' right='10%' hintText='请输入手机号')
-            View(width='100%' height='1px' backgroundColor='#C5C5C5')
-            View(layout='horizontal' height='60px' top='5%')
-                Label(text='密  码' textAlign='center' left='30px')
-                TextField(left='10%' right='10%' hintText='请输入密码')
+            View(class='label_textfield')
+                Label(text='手机号' class='label_textfield_label')
+                TextField(hintText='请输入手机号' class='label_textfield_textfield')
+            View(class='gray_line')
+            View(class='label_textfield')
+                Label(text='密码' class='label_textfield_label')
+                TextField(hintText='请输入密码' class='label_textfield_textfield')
             View(layout='vertical' backgroundColor='#F1F1EF' bottom='0')

@@ -1,0 +1,5 @@
+$spectral_hue_backgroundColor: white;
+
+$common_font_color: black;
+
+$gray_line:#C5C5C5;

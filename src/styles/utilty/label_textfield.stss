@@ -1,0 +1,16 @@
+@import "utilty/color.stss";
+
+.label_textfield[platform=ios formFactor=handheld]{
+  layout: horizontal;
+  height: 60px;
+  top: 5%;
+}
+.label_textfield_label[platform=ios formFactor=handheld]{
+  textAlign: center;
+  color: $common_font_color;
+  left: 30px;
+}
+.label_textfield_textfield[platform=ios formFactor=handheld]{
+  left: 10%;
+  right: 10%;
+}
