@@ -32,10 +32,11 @@ node_modules
 *.apk
 
 # MVC
-app/controllers/*.js
-app/views/*.xml
-app/styles/*.tss
+app/controllers/
+app/views/
+app/styles/
 app/views/home
+app/views/utilty
 
 # 配置文件
 tiapp.xml
