@@ -43,3 +43,4 @@ tiapp.xml
 Gruntfile.coffee
 package.json
 app/alloy.js
+app/alloy.jmk
