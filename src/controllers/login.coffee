@@ -28,6 +28,11 @@ to_home_view=(e) ->
     Alloy.createController("home").getView().open()
     $.login.close()
 
+free_login = (e)->
+  $.phone.setValue('18514243141')
+  $.password.setValue('aaaaaaaa')
+  http_client(Setting.server+'/interface/users/login')
+
 $.title.setText('登陆悦装修')
 $.title.setColor('#DA338C')
 $.back.hide()
