@@ -8,11 +8,10 @@
 .label_textfield_label[platform=ios formFactor=handheld]{
   textAlign: center;
   color: $common_font_color;
-  left: 30px;
+  left: 5%;
 }
 .label_textfield_textfield[platform=ios formFactor=handheld]{
   left: 10%;
   right: 10%;
   color: $gray_font;
-  textAlign: center;
 }

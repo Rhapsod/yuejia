@@ -12,11 +12,12 @@
 ".label_textfield_label[platform=ios formFactor=handheld]": {
 	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
 	color: "black",
-	left: "30px"
+	left: "5%"
 },
 ".label_textfield_textfield[platform=ios formFactor=handheld]": {
 	left: "10%",
-	right: "10%"
+	right: "10%",
+	color: "#C5C5C5"
 },
 ".gray_line": {
 	width: "100%",
@@ -25,19 +26,16 @@
 },
 "Label[platform=ios formFactor=handheld]": {
 	font: {
-		fontSize: "12sp",
-		fontWeight: "bold"
+		fontSize: "12sp"
 	}
 },
 "Button[platform=ios formFactor=handheld]": {
 	font: {
-		fontSize: "16sp",
-		fontWeight: "bold"
+		fontSize: "16sp"
 	}
 },
 "TextField[platform=ios formFactor=handheld]": {
 	font: {
-		fontSize: "12sp",
-		fontWeight: "bold"
+		fontSize: "12sp"
 	}
 }
