@@ -1,0 +1,12 @@
+Alloy
+    Window
+        View(class='windows')
+            include ./utilty/header.jade
+            View(class='label_textfield')
+                TextField#suggest_title(hintText='请输入标题/选填' color='black' class='label_textfield_textfield' keyboardType='Titanium.UI.KEYBOARD_NUMBER_PAD')
+            View(class='gray_line')
+            View(class='label_textfield')
+                TextField#suggest_detail(hintText='请输入内容/选填' color='black' class='label_textfield_textfield' returnKeyType='Titanium.UI.RETURNKEY_DEFAULT' keyboardType='Titanium.UI.KEYBOARD_DEFAULT' passwordMask='true')
+            View(class='gray_line')
+            View(backgroundColor='#F1F1EF' bottom='0' layout='vertical')
+                Button(onClick='commit_suggest' left='5%' right='5%' borderColor='#BE328C' height='60px' borderRadius='5' title='提交' backgroundColor='#BE348A' top='30px' color='white' )

@@ -16,24 +16,16 @@ actInd = Ti.UI.createActivityIndicator(
   width:Ti.UI.SIZE
 )
 
-$.register.add actInd
+$.suggest.add actInd
 
 back = (e)->
-    Alloy.createController("login").getView().open()
-    $.register.close()
+    $.suggest.close()
 
-$.title.setText('注册')
-$.other_button.setTitle('提交')
+$.title.setText('意见反馈')
 
 
-to_home_view = (e) ->
-  Alloy.createController("home").getView().open()
-  $.register.close()
-
-save_user_info =(e)->
-  http_client(Setting.server+'/interface/users/register')
-
-$.other_click.addEventListener('click', save_user_info)
+commit_suggest =(e)->
+  http_client(Setting.server+'/interface/suggests/commit_suggest')
 
 http_client = (url) ->
     client = Ti.Network.createHTTPClient(
@@ -42,17 +34,17 @@ http_client = (url) ->
         onload : (e) ->
             actInd.hide()
             alert(JSON.parse(this.responseText).result)
-            if JSON.parse(this.responseText).result == '注册成功'
-              app_session.user_info = JSON.parse(this.responseText).user
-              to_home_view()
         onerror : (e) ->
             actInd.hide()
             alert('网络不给力')
         timeout : 5000
     )
     params =
-          phone: $.phone.value
-          password: $.password.value
+          title: $.suggest_title.value
+          detail: $.suggest_detail.value
+          user_id: app_session.user_info.id
+          version: Ti.App.version
+
     client.open("POST", url)
     client.send(params)
 

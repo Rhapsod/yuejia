@@ -28,6 +28,7 @@ to_home_view=(e) ->
     Alloy.createController("home").getView().open()
     $.login.close()
 
+
 free_login = (e)->
   $.phone.setValue('18514243141')
   $.password.setValue('aaaaaaaa')
@@ -49,7 +50,7 @@ http_client = (url) ->
             actInd.hide()
             alert(JSON.parse(this.responseText).result)
             if JSON.parse(this.responseText).result == '登录成功'
-              User_information = JSON.parse(this.responseText).user
+              app_session.user_info = JSON.parse(this.responseText).user
               to_home_view()
         onerror : (e) ->
             actInd.hide()
