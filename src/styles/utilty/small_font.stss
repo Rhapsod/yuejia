@@ -1,0 +1,19 @@
+Label[platform=ios formFactor=handheld]{
+  font:{
+    fontSize:12sp;
+    /*fontWeight: bold;*/
+  }
+}
+Button[platform=ios formFactor=handheld]{
+  font:{
+    fontSize:16sp;
+    /*fontWeight: bold;*/
+  }
+}
+
+TextField[platform=ios formFactor=handheld]{
+  font:{
+    fontSize:12sp;
+    /*fontWeight: bold;*/
+  }
+}

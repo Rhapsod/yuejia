@@ -1,5 +1,11 @@
+/*背景色主色调*/
 $spectral_hue_backgroundColor: white;
 
+/*输入字体颜色*/
 $common_font_color: black;
 
+/*灰色线条*/
 $gray_line:#C5C5C5;
+
+/*灰色字体颜色*/
+$gray_font:#C5C5C5;
