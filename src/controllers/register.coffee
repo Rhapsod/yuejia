@@ -1,23 +1,3 @@
-#网络加载旋转效果
-style
-if Ti.Platform.name == 'iPhone OS'
-  style = Ti.UI.iPhone.ActivityIndicatorStyle.DARK
-else
-  style = Ti.UI.ActivityIndicatorStyle.DARK
-
-actInd = Ti.UI.createActivityIndicator(
-  color: '#C5C5C5'
-  font: {fontFamily:'Helvetica Neue', fontSize:8}
-  message: 'Loading...'
-  style:style
-  top:'50%'
-  left:'40%'
-  height:Ti.UI.SIZE,
-  width:Ti.UI.SIZE
-)
-
-$.register.add actInd
-
 back = (e)->
     Alloy.createController("login").getView().open()
     $.register.close()
@@ -38,16 +18,14 @@ $.other_click.addEventListener('click', save_user_info)
 http_client = (url) ->
     client = Ti.Network.createHTTPClient(
         onreadystatechange: (e) ->
-            actInd.show()
+            load()
         onload : (e) ->
-            actInd.hide()
             alert(JSON.parse(this.responseText).result)
             if JSON.parse(this.responseText).result == '注册成功'
               app_session.user_info = JSON.parse(this.responseText).user
               to_home_view()
         onerror : (e) ->
-            actInd.hide()
-            alert('网络不给力')
+            console.info(e.error)
         timeout : 5000
     )
     params =
