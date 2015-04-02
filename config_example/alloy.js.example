@@ -1,0 +1,38 @@
+//上一次登陆用户的头像缓存
+last_login = {
+    photo: "/images/public/default.png"
+};
+Q = require('q');
+//版本更新
+version = {
+    url:'interface/versions'
+};
+//其他的一些常用字段
+Other = {
+    Network_unstable :'网络不给力'
+};
+// 这里放全局使用的内容。
+Setting = {
+    //server: 'http://106.185.52.66:3600',
+    server: 'http://localhost:3333',
+    //server: 'http://106.185.55.68:3333', //正式服务器
+    //server: 'http://api.happystock.cn', //正式服务器
+};
+//当前登陆用户信息
+app_session = {
+  user_info : {
+  }
+};
+
+Alloy.Globals.loading = Alloy.createWidget("nl.fokkezb.loading");
+function load_cancel() {
+  Alloy.Globals.loading.hide()
+}
+
+function load() {
+  Alloy.Globals.loading.show('网络加载中...', false);
+
+  setTimeout(function(){
+    Alloy.Globals.loading.hide();
+  }, 6000);
+}
