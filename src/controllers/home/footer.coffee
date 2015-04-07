@@ -75,3 +75,5 @@ show_progress =()->
 
 show_discover =()->
   hide_view(Click_discover)
+
+$.home_content.setHeight(platformHeight - 226+'px')

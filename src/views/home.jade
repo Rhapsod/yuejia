@@ -1,8 +1,8 @@
 Alloy
-    Window
+    Window(height='100%')
         View(layout='vertical')
             include ./home/header.jade
-            View(height='910px')
+            View#home_content(top='0')
                 include ./home/require.jade
                 include ./home/service.jade
                 include ./home/progress.jade
